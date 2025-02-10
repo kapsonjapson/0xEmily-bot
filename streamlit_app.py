@@ -1,5 +1,5 @@
 # Step 1: Install the tools we need
-pip install openai streamlit # type: ignore
+
 
 # Step 2: Write the code for Emily
 import openai
