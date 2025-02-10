@@ -1,18 +1,14 @@
-# Step 1: Install the tools we need
-
-
-# Step 2: Write the code for Emily
 import openai
 import streamlit as st
 
-# Step 3: Set up your API key
-openai.api_key = "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"  # Replace this with your actual API key
+# Set up your API key
+openai.api_key = "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"  # Replace with your actual API key
 
-# Step 4: Create Emily
+# Create the Streamlit app
 st.title("Meet Emily! 🤖")
 st.write("Emily is your friendly AI assistant. Ask her anything!")
 
-# Step 5: Let Emily talk to you
+# Let Emily talk to you
 user_input = st.text_input("You: ")
 
 if user_input:
