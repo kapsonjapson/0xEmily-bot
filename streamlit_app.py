@@ -12,9 +12,9 @@ st.write("Emily is your friendly AI assistant. Ask her anything!")
 user_input = st.text_input("You: ")
 
 if user_input:
-    response = openai.ChatCompletion.create(
+    response = openai.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[{"role": "user", "content": user_input}]
     )
-    emily_response = response['choices'][0]['message']['content']
+    emily_response = response.choices[0].message.content
     st.write(f"Emily: {emily_response}")
